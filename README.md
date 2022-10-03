@@ -1,5 +1,13 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+<https://docs.amplify.aws/guides/hosting/nextjs/q/platform/js/#getting-started>
+
+Kill anything running on port 3000
+
+```
+sudo kill -9 $(sudo lsof -t -i:3000)
+```
+
 ## Getting Started
 
 First, run the development server:
