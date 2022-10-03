@@ -8,6 +8,14 @@ import '../styles/globals.css';
 
 const clientSideEmotionCache = createEmotionCache();
 
+// Amplify
+import { Amplify } from 'aws-amplify';
+import awsconfig from './aws-exports';
+Amplify.configure({
+  ...config,
+  ssr: true
+})
+
 // Components
 import AppBar from '../components/AppBar'
 
